@@ -13,14 +13,14 @@ public class SelectionSort {
 		public static void main(String[] args)
 		{
 			Scanner sc = new Scanner(System.in);
-			Random rand=new Random(); //random sınıfı
+			Random rand = new Random(); //random sınıfı
 			
 			System.out.print("Dizinin eleman sayısının giriniz: ");
 			int size = sc.nextInt();
 			int arr[] = new int[size];
 			
 			for (int i = 0; i < size; i++) {
-				arr[i] = rand.nextInt(20);
+				arr[i] = rand.nextInt(30);//1 den 30 a kadar int türünde rastgele sayılar üretir
 			}
 			
 			System.out.print("\nDizinin Sıralanmamış Hali:");
