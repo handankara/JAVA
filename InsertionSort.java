@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.util.Scanner;
 
 /**
- * @author handan
+ * @author handan 
  *
  */
 public class InsertionSort {
@@ -13,32 +13,32 @@ public class InsertionSort {
 		Scanner sc = new Scanner(System.in);
 		
 		System.out.print("Dizinin eleman sayısı:");
-		int total = sc.nextInt();
-		int arr[] = new int[total];
+		int size = sc.nextInt();
+		int arr[] = new int[size];
 		
-		for (int i = 0; i < total; i++)
+		for (int i = 0; i < size; i++)
 		{
 			System.out.print("\n" + (i+1) + ".sayıyı giriniz: ");
 			arr[i] = sc.nextInt();
 		}
 		System.out.print("\nDizinin Sıralanmamış Hali:");
-		for (int i = 0; i < total; i++)
+		for (int i = 0; i < size; i++)
 		{
 			System.out.print(" " + arr[i]);
 		}
 		
-		insertionSort(arr, total);
+		insertionSort(arr, size);
 		
 		System.out.print("\nDizinin Sıralanmış Hali:");
-		for (int i = 0; i < total; i++)
+		for (int i = 0; i < size; i++)
 		{
 			System.out.print(" " + arr[i]);
 		}
 	}
 	
-	public static void insertionSort (int arr[], int total) {
+	public static void insertionSort (int arr[], int size) {
 		
-		for (int i = 1; i < total; i++)
+		for (int i = 1; i < size; i++)
 		{
 			int temp = arr[i];
 			int j = i;
