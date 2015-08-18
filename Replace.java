@@ -5,7 +5,6 @@ import java.util.Scanner;
 /**
  * @author Handan Kara
  *
- * 
  */
 public class ReplaceClass 
 {
@@ -15,11 +14,11 @@ public class ReplaceClass
 		System.out.print ("Lütfen bir cümle giriniz:");
 		String str = sc.nextLine ();
 		
-		replace (str);
+		Replace (str);
 	}
 		
 	
-	public static void replace (String str) 
+	public static void Replace (String str) 
 	{
 		 char[] chars = str.toCharArray ();
 		 int size = chars.length;
