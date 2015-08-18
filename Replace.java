@@ -7,13 +7,13 @@ import java.util.Scanner;
  *
  * 
  */
-public class deneme 
+public class ReplaceClass 
 {
 	public static void main (String[] args) throws IOException
 	{
 		Scanner sc = new Scanner (System.in); //Klavyeden veri almak için bu sınıf kullanılır.
-		System.out.print("Lütfen bir cümle giriniz:");
-		String str = sc.nextLine();
+		System.out.print ("Lütfen bir cümle giriniz:");
+		String str = sc.nextLine ();
 		
 		replace (str);
 	}
@@ -27,7 +27,7 @@ public class deneme
 		 for (int i = 0; i < size; i++) {
 			 
 			 if (chars[i] == 'ü') {
-				 chars[i] = 'u';
+			     chars[i] = 'u';
 			 }
 		 }
 		 System.out.print (chars);
